@@ -1,0 +1,138 @@
+---
+title: 'Small Business Web Design and Development | Painless Sites'
+description: 'Hand-Coded websites built to suit your needs. No page builders or Wordpress. Starting at $120/mo.'
+preloadImg: '/assets/pictures/code-img.webp'
+permalink: 'services/'
+tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
+eleventyNavigation:
+  key: Services
+  order: 100
+---
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/services.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs-867">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/pictures/code-img-m.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/pictures/code-img.webp">
+                <img loading="lazy" decoding="async" src="/assets/pictures/code-img.webp" alt="man sitting at desk working on computer" width="630" height="775">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Web Design and Development in Paducah, Kentucky:<br>
+                    <span class="separator">The Painless Alternative to Website Builders</span></h2>
+                <p class="cs-text">
+                    <span class="text-span">Building and managing your own website can be a pain.</span><br>Your business was born from a passion, and your website should reflect that. But with Wordpress or Squarespace's complicated setups, numerous plugins you have to keep on top of, and how you can't get that section to look just right &mdash; it can be a bit of a headache. Websites made using these builders also tend to be bloated, slowing down your site and impacting your SEO performance.</p>
+                <p class="cs-text">
+                    At Painless Sites we offer an alternative: affordable, hand-coded websites that are pixel-perfect. No more "It's good enough". With no up-front cost, we deliver a professional website that matches your vision for how you want your customers to see your work.
+                    <span class="text-span middle">Too good to be true?</span>
+                    Anyone who promises to get you to Google's front page in months is lying to you. It's a process you invest in, not a switch you can turn on. That being said, our goal is to set you up for success so that your search ranking and reach only gets better with time. The best part is &mdash; you don't have to worry about any of it. You let us handle the website stuff, and you focus on running your business.
+
+                </p>
+            </div>
+        </div>
+
+    </section>
+    {% include 'components/steps.html' %}
+
+    <!-- ============================================ -->
+    <!--                 Why Choose                   -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1371">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Why Choose Us</span>
+                <h2 class="cs-title">$0 Down, $120 Per Month, 12-Month Minimum Contract</h2>
+                <p class="cs-text">
+                No upfront cost for a 5-page website for your small business. Need more than 5 pages? Reach out so we can work out custom pricing that fits your needs.
+            </p>
+                <p class="cs-text">
+                    <strong>You own your domain, content, listing, and profiles. Cancel anytime with no fees or hassle.</strong>
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/icons/server.svg" alt="icon" width="24" height="24">
+                    Hosting Fees Included
+                </h3>
+                    <p class="cs-item-text">
+                    No extra charge for hosting. We handle hosting and your domain all for one monthly price.
+                </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/icons/customer-service.svg" alt="icon" width="24" height="24">
+                    Responsive Customer Service
+                </h3>
+                    <p class="cs-item-text">
+                    Call, text, email - whatever you need, we'll make sure you're taken care of.
+                </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/icons/speed.svg" alt="icon" width="24" height="24">
+                    Top Speed
+                </h3>
+                    <p class="cs-item-text">
+                    Your website will be designed from the ground up to meet Google's requirements for load times to maximize search engine optimization.
+                </p>
+                </li>
+                <li class="cs-item-picture">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/pictures/handshake-m.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/pictures/handshake.webp">
+                        <img loading="lazy" decoding="async" src="/assets/pictures/handshake.webp" alt="people" width="590" height="418">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/icons/edit.svg" alt="icon" width="24" height="24">
+                    Unlimited Edits
+                </h3>
+                    <p class="cs-item-text">
+                    Request changes to anything about your site and we'll implement it ASAP at no extra charge.
+                </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/icons/update.svg" alt="icon" width="24" height="24">
+                    Lifetime Updates
+                </h3>
+                    <p class="cs-item-text">
+                    We stay on top of Google's algorithm standards as well as accessibility best practices to ensure your site it top-performing for the lifetime of your contract.
+                </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/icons/chart.svg" alt="icon" width="24" height="24">
+                    Google Business and Analytics
+                </h3>
+                    <p class="cs-item-text">
+                    We get you set up with a Google Business profile and install Google Analytics for free so we can measure traffic and boost conversions.
+                </p>
+                </li>
+            </ul>
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
+    </section>
+
+    {% include 'components/pricing.html' %}
+    {% include 'components/cta.html' %}
+
+{% endblock %}
