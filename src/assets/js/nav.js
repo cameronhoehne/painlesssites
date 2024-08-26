@@ -47,7 +47,6 @@ for (const item of dropDowns) {
 }
 
 const liLink = Array.from(document.querySelectorAll("#cs-li-link-id"));
-console.log(liLink);
 for (let item of liLink) {
     const onClick = () => {
         console.log("mongo");
