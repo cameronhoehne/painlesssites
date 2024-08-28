@@ -25,6 +25,7 @@
         --bodyFontSize: 1rem;
         /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+        --gradient: linear-gradient(90deg, rgba(13, 96, 165, 1) 0%, rgba(162, 229, 247, 1) 100%);
     }
 
     /* 
@@ -739,25 +740,22 @@
             }
 
             .cs-logo {
+
                 /* makes it white */
-                filter: grayscale(1) brightness(1000%);
+                img {
+                    filter: invert(1) grayscale(1) brightness(1000%);
+                }
+
+                color: #fff;
             }
 
             .cs-toggle {
-                background-color: var(--secondary);
-            }
+                background: var(--gradient);
 
-            .cs-phone {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-phone-icon {
-                /* turns it white */
-                filter: grayscale(1) brightness(1000%);
             }
 
             .cs-line {
-                background-color: #fff;
+                background-color: var(--bodyTextColorWhite)
             }
 
             .cs-ul-wrapper {
@@ -825,7 +823,7 @@
         }
 
         .cs-logo {
-            width: 18.4%;
+            width: 21%;
             max-width: (350/16rem);
             height: (40/16rem);
             /* margin-right auto pushes everything away from it to the right */
@@ -916,7 +914,7 @@
 
             .cs-logo {
                 /* turns it white */
-                filter: grayscale(1) brightness(1000%);
+                filter: invert(1) grayscale(1) brightness(1000%);
             }
 
             .cs-li-link,
@@ -1376,8 +1374,7 @@
                 .cs-button-transparent {
                     background-color: var(--primary);
                     color: #fff;
-                    transition:
-                        color 0.3s,
+                    transition: color 0.3s,
                         border-color 0.6s,
                         background-color 0.3s;
 
@@ -1632,8 +1629,7 @@
                 background-color: var(--primary);
                 color: #fff;
                 border: none;
-                transition:
-                    color 0.3s,
+                transition: color 0.3s,
                     background-color 0.3s;
 
                 &:hover {
@@ -2003,8 +1999,11 @@
             background-color: rgba(0, 0, 0, 0.6);
 
             .cs-logo {
+
                 /* turns logo white */
-                filter: grayscale(1) brightness(1000%);
+                img {
+                    filter: invert(1) grayscale(1) brightness(1000%);
+                }
             }
 
             .cs-top {
