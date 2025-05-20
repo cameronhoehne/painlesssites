@@ -13,13 +13,14 @@
     background: linear-gradient(90deg, #0d60a5 0%, #a2e5f7 100%);
     position: relative;
     z-index: 1;
+    border: none;
     /* Prevents white rectangle pseudos from overlapping the sections below */
     overflow: hidden;
     /* SVG Wave Styling */
   }
   #hero-143 .custom-shape-divider-bottom-1723321338 {
     position: absolute;
-    bottom: 0;
+    bottom: -0.1rem;
     left: 0;
     width: 100%;
     overflow: hidden;

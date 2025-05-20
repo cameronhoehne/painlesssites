@@ -21,6 +21,7 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --gradient: linear-gradient(90deg, #0d60a5 0%, #a2e5f7 100%);
   }
   /* 
         Tangaroa #09183E
@@ -383,6 +384,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
+    color: black;
   }
   #cs-navigation .cs-logo img {
     width: 25%;
@@ -392,7 +394,7 @@
     margin-right: 1.1rem;
   }
   #cs-navigation .cs-logo:visited {
-    color: inherit;
+    color: black;
   }
   #cs-navigation .cs-toggle {
     width: 3.5rem;
@@ -597,20 +599,16 @@
   }
   body.dark-mode #cs-navigation .cs-logo {
     /* makes it white */
-    filter: grayscale(1) brightness(1000%);
+    color: #fff;
+  }
+  body.dark-mode #cs-navigation .cs-logo img {
+    filter: invert(1) grayscale(1) brightness(1000%);
   }
   body.dark-mode #cs-navigation .cs-toggle {
-    background-color: var(--secondary);
-  }
-  body.dark-mode #cs-navigation .cs-phone {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-navigation .cs-phone-icon {
-    /* turns it white */
-    filter: grayscale(1) brightness(1000%);
+    background: var(--gradient);
   }
   body.dark-mode #cs-navigation .cs-line {
-    background-color: #fff;
+    background-color: var(--bodyTextColorWhite);
   }
   body.dark-mode #cs-navigation .cs-ul-wrapper {
     background-color: var(--medium);
@@ -667,7 +665,7 @@
     display: none;
   }
   #cs-navigation .cs-logo {
-    width: 18.4%;
+    width: 21%;
     max-width: 21.875rem;
     height: 2.5rem;
     /* margin-right auto pushes everything away from it to the right */
@@ -680,6 +678,7 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 1.2rem;
+    color: black;
   }
   #cs-navigation .cs-logo img {
     width: auto;
@@ -689,7 +688,7 @@
     margin-right: 1.1rem;
   }
   #cs-navigation .cs-logo:visited {
-    color: inherit;
+    color: black;
   }
   #cs-navigation .cs-ul-wrapper {
     height: 100%;
@@ -745,7 +744,7 @@
   }
   body.dark-mode #cs-navigation .cs-logo {
     /* turns it white */
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(1) grayscale(1) brightness(1000%);
   }
   body.dark-mode #cs-navigation .cs-li-link,
   body.dark-mode #cs-navigation .cs-phone {
@@ -1345,6 +1344,162 @@
   }
 }
 /*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-1670 {
+    padding: var(--sectionPadding);
+  }
+  #reviews-1670 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 40px - 64px */
+    gap: clamp(2.5rem, 4.5vw, 4rem);
+  }
+  #reviews-1670 .cs-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #reviews-1670 .cs-title {
+    margin: 0rem;
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+  }
+  #reviews-1670 .cs-card-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #reviews-1670 .cs-item {
+    list-style: none;
+    width: 100%;
+    /* 20px - 40px top & bottom */
+    /* 20px - 40px left & right */
+    padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
+    background-color: #f7f7f7;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+    display: flex;
+    grid-column: span 12;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* 24px - 48px */
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+  #reviews-1670 .cs-flex-group {
+    /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #reviews-1670 .cs-flex-group a {
+    text-decoration: underline;
+    color: inherit;
+  }
+  #reviews-1670 .cs-profile {
+    width: 3.25rem;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+  }
+  #reviews-1670 .cs-profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes the image behave like a background image */
+    object-fit: cover;
+  }
+  #reviews-1670 .cs-name {
+    /* 20px - 25px */
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+    margin-top: auto;
+    color: var(--headerColor);
+    display: block;
+  }
+  #reviews-1670 .cs-job {
+    /* 14px - 16px */
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #reviews-1670 .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #reviews-1670 .cs-item-stars {
+    width: 6.75rem;
+    height: auto;
+  }
+  #reviews-1670 .cs-review {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    z-index: 1;
+  }
+  #reviews-1670 .cs-quote {
+    width: 5.375rem;
+    height: auto;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-1670 .cs-item {
+    grid-column: span 6;
+  }
+  #reviews-1670 .cs-title {
+    font-size: clamp(2.4375rem, 10vw, 5rem);
+    min-width: 80%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews-1670 .cs-title,
+  body.dark-mode #reviews-1670 .cs-review,
+  body.dark-mode #reviews-1670 .cs-name {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #reviews-1670 .cs-item {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #reviews-1670 .cs-job {
+    color: var(--bodyTextColorWhite);
+    opacity: 0.7;
+  }
+  body.dark-mode #reviews-1670 .cs-quote {
+    opacity: 0.2;
+  }
+}
+/*-- -------------------------- -->
 <---            CTA             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
@@ -1638,7 +1793,9 @@
   }
   body.dark-mode #footer-1391 .cs-logo {
     /* turns logo white */
-    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #footer-1391 .cs-logo img {
+    filter: invert(1) grayscale(1) brightness(1000%);
   }
   body.dark-mode #footer-1391 .cs-top {
     border-color: rgba(255, 255, 255, 0.2);
