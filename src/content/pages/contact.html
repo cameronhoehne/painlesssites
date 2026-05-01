@@ -54,8 +54,8 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Phone</span>
-                        <a href="tel:270-266-1886
-                    " class="cs-link">+1 (270) 266-1886
+                        <a href="tel:{{client.phoneForTel}}"
+                    " class="cs-link">{{client.phoneFormatted}}</a>
                     </a>
                     </div>
                 </li>
@@ -65,7 +65,7 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Email</span>
-                        <a href="mailto:contact@painlesssites.com" class="cs-link">contact@painlesssites.com</a>
+                        <a href="mailto:{{client.email}}" class="cs-link">{{client.email}}</a>
 
                     </div>
                 </li>

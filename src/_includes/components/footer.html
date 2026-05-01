@@ -6,7 +6,8 @@
     <div class="cs-container">
         <div class="logo-cont">
             <a aria-label="go back to home" href="/" class="cs-logo">
-                <img class="cs-logo-img" loading="lazy" decoding="async" src="/assets/icons/painless-logo.webp" alt="logo" width="209" height="40">
+                <img class="cs-logo-img" loading="lazy" decoding="async" src="/assets/icons/painless-logo.webp"
+                    alt="logo" width="209" height="40">
             </a>
         </div>
         <div class="cs-top">
@@ -41,10 +42,10 @@
                     <h2 class="cs-link">Contact</a>
                 </li>
                 <li class="cs-li">
-                    <a href="tel:270.266.1886" class="phone-email-li">(270) 266-1886</a>
+                    <a href="tel:{{client.phoneForTel}}" class="phone-email-li"> {{client.phoneFormatted}} </a>
                 </li>
                 <li class="cs-li">
-                    <a href="mailto:contact@painlesssites.com" class="phone-email-li">contact@painlesssites.com</a>
+                    <a href="mailto:{{client.email}}" class="phone-email-li">{{client.email}}</a>
                 </li>
             </ul>
 
@@ -54,8 +55,8 @@
     <div class="cs-bottom">
 
         <span class="cs-copyright">
-                © Copyright 2025 - Painless Sites
-            </span>
+            © Copyright 2025 - Painless Sites
+        </span>
     </div>
-</div>
+    </div>
 </footer>
