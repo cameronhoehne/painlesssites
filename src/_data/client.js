@@ -1,8 +1,8 @@
 module.exports = {
     "name": "Painless Sites",
     "email": "contact@painlesssites.com",
-    "phoneForTel": "270-266-1886",
-    "phoneFormatted": "(270) 266-1886",
+    "phoneForTel": "213-347-4319",
+    "phoneFormatted": "(213) 347-4319",
     "address": {
         "lineOne": "",
         "lineTwo": "",
