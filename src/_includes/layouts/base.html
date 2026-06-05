@@ -3,17 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL507HZRBX"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-
-            gtag('config', 'G-YL507HZRBX');
-        </script>
         <!-- Standard meta tags -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,6 +45,17 @@
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL507HZRBX"></script>
+        <!-- Google tag (gtag.js) -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-YL507HZRBX');
+        </script>
     </head>
     <body>
         <!--Screen reader skip main nav-->
