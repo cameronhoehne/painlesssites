@@ -7,6 +7,7 @@ date: 2026-06-04T20:47:00.000-05:00
 tags:
   - post
   - featured
+featured: true
 image: /assets/images/blog/bbt-tournaments.png
 imageAlt: tournaments
 ---
