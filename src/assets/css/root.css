@@ -6,11 +6,11 @@
 @media only screen and (min-width: 0rem) {
   :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #D36763;
+    --primary: #d36763;
     --primaryDark: #073065;
-    --primaryLight: #A2E5F7;
-    --secondary: #A2E5F7;
-    --secondaryLight: #A2E5F7;
+    --primaryLight: #a2e5f7;
+    --secondary: #a2e5f7;
+    --secondaryLight: #a2e5f7;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -182,7 +182,11 @@
     font-family: "Roboto";
     font-weight: 400;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+    src:
+      local(""),
+      url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-700 - latin */
@@ -191,7 +195,11 @@
     font-family: "Roboto";
     font-weight: 700;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
+    src:
+      local(""),
+      url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-900 - latin */
@@ -200,7 +208,11 @@
     font-family: "Roboto";
     font-weight: 900;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
+    src:
+      local(""),
+      url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 }
@@ -274,13 +286,17 @@
   }
   #dark-mode-toggle .cs-moon {
     z-index: 2;
-    transition: transform 0.3s, opacity 0.3s;
+    transition:
+      transform 0.3s,
+      opacity 0.3s;
   }
   #dark-mode-toggle .cs-sun {
     opacity: 0;
     z-index: 1;
     transform: translate(-50%, 100%);
-    transition: transform 0.3s, opacity 0.3s;
+    transition:
+      transform 0.3s,
+      opacity 0.3s;
   }
 }
 /* Desktop - 1024px */
@@ -329,7 +345,11 @@
     left: 50%;
     z-index: 10000;
     transform: translateX(-50%);
-    transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
+    transition:
+      top 0.3s,
+      border-radius 0.3s,
+      width 0.3s,
+      max-width 0.3s;
   }
   #cs-navigation:before {
     /* background color */
@@ -346,7 +366,9 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: transform 0.2s, border-radius 0.3s ease-in-out;
+    transition:
+      transform 0.2s,
+      border-radius 0.3s ease-in-out;
   }
   #cs-navigation.cs-active:before {
     transform: translateX(-50%) scale(1.03);
@@ -371,7 +393,7 @@
   }
   #cs-navigation .cs-logo {
     width: auto;
-    max-width: 12.5rem;
+    max-width: 16rem;
     height: 100%;
     margin: 0 auto 0 0;
     /* prevents padding from affecting height and width */
@@ -429,7 +451,9 @@
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
-    transition: opacity 0.3s, color 0.3s;
+    transition:
+      opacity 0.3s,
+      color 0.3s;
   }
   #cs-navigation .cs-phone-icon {
     width: 1.5rem;
@@ -469,7 +493,10 @@
   }
   #cs-navigation .cs-line1 {
     top: 0;
-    transition: transform 0.5s, top 0.3s, left 0.3s;
+    transition:
+      transform 0.5s,
+      top 0.3s,
+      left 0.3s;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-direction: normal;
@@ -479,7 +506,10 @@
   #cs-navigation .cs-line2 {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    transition: top 0.3s, left 0.3s, transform 0.5s;
+    transition:
+      top 0.3s,
+      left 0.3s,
+      transform 0.5s;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-direction: normal;
@@ -487,7 +517,9 @@
   }
   #cs-navigation .cs-line3 {
     bottom: 0;
-    transition: bottom 0.3s, opacity 0.3s;
+    transition:
+      bottom 0.3s,
+      opacity 0.3s;
   }
   #cs-navigation .cs-ul-wrapper {
     width: 100%;
@@ -525,7 +557,9 @@
     opacity: 0;
     /* transition from these values */
     transform: translateY(-70/16rem);
-    transition: transform 0.6s, opacity 0.9s;
+    transition:
+      transform 0.6s,
+      opacity 0.9s;
   }
   #cs-navigation .cs-li:nth-of-type(1) {
     transition-delay: 0.05s;
@@ -647,7 +681,11 @@
     left: 50%;
     z-index: 10000;
     transform: translateX(-50%);
-    transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
+    transition:
+      top 0.3s,
+      border-radius 0.3s,
+      width 0.3s,
+      max-width 0.3s;
   }
   #cs-navigation .cs-container {
     width: 100%;
@@ -857,7 +895,10 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    transition: background-color 0.3s, border-color 0.3s, transform 0.2s ease-in-out;
+    transition:
+      background-color 0.3s,
+      border-color 0.3s,
+      transform 0.2s ease-in-out;
   }
   #steps-1376 .cs-item:before {
     content: "";
@@ -871,7 +912,10 @@
     bottom: 0;
     left: -7.25rem;
     transform: translateY(6.25rem);
-    transition: left 0.3s, transform 0.3s, opacity 0.3s;
+    transition:
+      left 0.3s,
+      transform 0.3s,
+      opacity 0.3s;
   }
   #steps-1376 .cs-item:hover {
     background-color: var(--primary);
@@ -924,7 +968,9 @@
     margin: 0;
     padding: 0;
     color: var(--bodyTextColor);
-    transition: color 0.3s, opacity 0.3s;
+    transition:
+      color 0.3s,
+      opacity 0.3s;
   }
   #steps-1376 .cs-waves {
     display: none;
@@ -980,13 +1026,13 @@
   #steps-1376 .cs-group1 {
     width: 100%;
     /* -8px to -30px, we put the clamp in a calc function to turn it into a negative number and pull down to cause the overlapping effect */
-    margin-bottom: calc(clamp(.5rem, 2vw, 1.875rem)*-1);
+    margin-bottom: calc(clamp(0.5rem, 2vw, 1.875rem) * -1);
     flex-direction: row;
   }
   #steps-1376 .cs-group2 {
     width: 100%;
     /* -8px to -30px */
-    margin-top: calc(clamp(.5rem, 2vw, 1.875rem)*-1);
+    margin-top: calc(clamp(0.5rem, 2vw, 1.875rem) * -1);
     flex-direction: row;
   }
   #steps-1376 .cs-waves {
@@ -1130,7 +1176,10 @@
   #pricing-1386 .cs-item.cs-popular .cs-button-transparent {
     background-color: var(--primary);
     color: #fff;
-    transition: color 0.3s, border-color 0.6s, background-color 0.3s;
+    transition:
+      color 0.3s,
+      border-color 0.6s,
+      background-color 0.3s;
   }
   #pricing-1386 .cs-item.cs-popular .cs-button-transparent:hover {
     border-color: #1a1a1a;
@@ -1337,7 +1386,9 @@
     background-color: var(--primary);
     color: #fff;
     border: none;
-    transition: color 0.3s, background-color 0.3s;
+    transition:
+      color 0.3s,
+      background-color 0.3s;
   }
   body.dark-mode #pricing-1386 .cs-button-transparent:hover {
     background-color: #1a1a1a;
@@ -1597,9 +1648,24 @@
     width: 31.25rem;
     height: 93.75rem;
     margin-right: -3.125rem;
-    background: -moz-linear-gradient(left, #1a1a1a 0%, #1a1a1a 57%, rgba(26, 26, 26, 0) 100%);
-    background: -webkit-linear-gradient(left, #1a1a1a 0%, #1a1a1a 57%, rgba(26, 26, 26, 0) 100%);
-    background: linear-gradient(to right, #1a1a1a 0%, #1a1a1a 57%, rgba(26, 26, 26, 0) 100%);
+    background: -moz-linear-gradient(
+      left,
+      #1a1a1a 0%,
+      #1a1a1a 57%,
+      rgba(26, 26, 26, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      #1a1a1a 0%,
+      #1a1a1a 57%,
+      rgba(26, 26, 26, 0) 100%
+    );
+    background: linear-gradient(
+      to right,
+      #1a1a1a 0%,
+      #1a1a1a 57%,
+      rgba(26, 26, 26, 0) 100%
+    );
     opacity: 1;
     position: absolute;
     display: block;
